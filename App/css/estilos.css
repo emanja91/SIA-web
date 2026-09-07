@@ -1,0 +1,145 @@
+:root{
+    --primary:#1e3a8a; /*Azul institucional*/
+    --primary-light:#3b82f6; /*Azul para botones y enfoques*/
+    --bg:#f8fafc; /*Fondo general de la pantalla*/
+    --surfarce:#ffffff; /*Fondo contenedor de tarjeta*/
+    --text:#0f172a; /*Color de texto principal*/
+    --text-muted:#64748b; /*Color de texto secundario*/
+    --border:#e2e8f0; /*Color de bordes e insumos*/
+    --focus-ring:#bfdbfe; /*Anillo de resplandor al enfocar campos*/
+    
+}
+/*Estilos base*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif';
+}
+body{
+    background-color:var(--bg);
+    color:var(--text);
+    /*Centrado absoluto horizontal y vertifical mediante flexbox*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:1rem;
+    background-image:url('../img/classroom.jpg');
+    
+    
+}
+/*Tarjeta contenedora*/
+.login-card{
+   background-color: #ffffff !important; /* Color blanco forzado directamente */
+    width: 100%;
+    max-width: 400px;
+    padding: 2.5rem 2rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e2e8f0;
+    /* Sombra con opacidad ajustada para resaltar claramente sobre la foto de fondo */
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+    
+}
+/*Encabezado del formulario*/
+.login-header{
+    text-align:center;
+    margin-bottom:2rem;
+}
+.login-header h1{
+    font-size:1.5rem;
+    color:var(--primary);
+    margin-bottom:0.5rem;
+}
+.login-header p{
+    color:var(--text-muted);
+    font-size:0.875rem;
+}
+/*Campos y controles del formulario*/
+.form-group{
+    margin-bottom:1.25rem;
+    display:flex;
+    flex-direction:column;
+}
+.form-group label{
+    margin-bottom:0.875rem;
+    font-weight:600;
+    margin-left:0.35rem;
+    color:var(--text);
+}
+/*Estilo uniforme para los inputs de tipo text, email y password*/
+.form-control
+{
+   width:100%;
+   padding:0.75rem 1rem;
+   border:1px solid var(--border);
+   border-radius:0.375rem;
+   font-size:0.95rem;
+   background-color:var(--bg);
+   /*Transición suave para cuando el usuario hace clic*/
+   transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+/*Resaltado interfactivo cuando el campo esta enfocado*/
+.form-control:focus{
+    outline:none;
+    border-color:var(--primary-light);
+    background-color:var(--surface);
+    box-shadow:0 0 0 3px var(--focus-ring);
+}
+/*Opciones secundarias*/
+.form-actions{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:1.5rem;
+    font-size:0.875rem;
+}
+.remember-me{
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+    color:var(--text-muted);
+    cursor:pointer;
+}
+.remember-me input[type="checkbox"]{
+    accent-color:var(--primary-light);
+    cursor:pointer;
+}
+.forgot-password{
+    color:var(--primary-light);
+    text-decoration:none;
+    font-weight:500;
+}
+/*Boton de envio*/
+.btn-submit{
+    width:100%;
+    background-color:var(--primary);
+    color:white;
+    border:none;
+    padding:0.75rem;
+    border-radius:0.375rem;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+    transition: background-color 0.2s;
+}
+.btn-submit:hover{
+    background-color:var(--primary-light);
+}
+/*Footer del formulario o pie de pagina */
+.login-footer{
+    text-align:center;
+    margin-top:1.5rem;
+    font-size:0.875rem;
+    color:var(--text-muted);
+}
+.login-footer a{
+    color:var(--primary-light);
+    text-decoration:none;
+    font-weight:500;
+}
+.login-footer a:hover{
+    text-decoration:underline;
+}

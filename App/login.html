@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIA | Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Contenido de la página de inicio de sesión -->
+     <div class="login-card">
+        <!--Encabezado Informativo-->
+        <div class="login-header">
+            <h1>Portal Academico</h1>
+            <p>Ingrese sus credenciales para acceder al sistema.</p>
+     </div>
+     <!-- Formulario de inicio de sesión -->
+      <form action="#" method="POST">
+        <!-- Campo de usuario o Correo Electronico-->
+         <div class="form-group">
+            <label for="usuario"> Código de Estudiante o Correo Electrónico</label>
+            <input type="text" id="usuario" name ="usuario" class="form-control" placeholder ="Ej: 20210001 o usuario@universidad.edu" required autocomplete="username">
+         </div>
+         <!-- Campo de contraseña -->
+         <div class="form-group">
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" name ="contrasena" class="form-control" placeholder ="Ingrese su contraseña" required autocomplete="current-password">
+        </div>
+        <!-- opciones de recordar sesión y recuperar clave de acceso-->
+         <div class="form-actions">
+            <label class="remmeber-me">
+                <input type="checkbox" name="remember" id="remember">
+                <span>Recordar sesión</span>
+            </label>
+            <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+         </div>
+         <!-- Botón para enviar el formulario -->
+          <button type="submit" class="btn-submit">Iniciar Sesión</button>
+      </form>
+      <!-- Pie de página   -->
+       <footer class="login-footer">
+        <p>¿Aun no tienes cuenta? <a href="#">Regístrate aquí</a></p>
+        <p>ir a dashboard <a href="html/dashboard.html" target="_blank">Ir al Dashboard</a></p>
+       </footer>
+</body>
+</html>

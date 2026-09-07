@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIA | Dashboard Estudiante</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <!-- menu de navegacion uso aside que es un contenedor para el menú -->
+     <div class="sidebar">
+        <h2> Portal Academico</h2>
+        <ul class="menu-list">
+            <li><a href="#"  class="menu-link active">Inicio</a></li>
+            <li><a href="#" class="menu-link">Mi Perfil</a></li>
+            <li><a href="#" class="menu-link">Consultar Notas</a></li>
+            <li><a href="Certificados.html" class="menu-link">Solicitar Certificado</a></li>
+            <li><a href="#" class="menu-link">Matricula de Materias</a></li>
+        </ul>
+    </div>
+    <!-- Contenido principal-->
+     <div class="main-content">
+        <header class="header">
+            <h1>Dashboard de Gestion Estudiantil</h1>
+            <div class="user-info">
+                <strong> Bienvenida  Mariana Manjarres</strong>
+                <div class="role">
+                    <strong> Codigo: 20261001</strong>
+                </div>
+            </div>
+        </header>
+        <!-- Contenido del dashboard  uso de grid -->
+         <div class="grid">
+            <section class="card" id="notas">
+                <!-- table para mostrar las notas-->
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Materia</th>
+                            <th>Nota 1</th>
+                            <th>Nota 2</th>
+                            <th>Nota 3</th>
+                        </tr>
+                        </thead>
+                    <tbody>
+                        <tr>
+                            <td>Desarrollo de Aplicaciones Web</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>HTML, CSS Y JAVASCRIPT</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td>Programación Orientada a Objetos</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>Base de Datos Mysql</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>20</td>
+                        </tr>
+                </table>
+            </section>
+            <!-- card para certificados-->
+             <section class="card" id="certificados">
+                <h3>Solicitud de certificados</h3>
+                <p style="color:var(--text-muted);font-size: 0.9 rem; margin-bottom: 1rem;">
+                    Genera certificados oficiales en formato PDF al instante
+                </p>
+                <button class="btn">Solicitar Certificado</button>
+                <button class="btn" style="background-color:transparent;color:var(--primary-light); border:1px solid var(--primary-light);">Ver Certificados</button>
+             </section>
+             <!--card para matricula de materias-->
+             <section class="card" id="matricula">
+                <h3>Matricula de Materias</h3>
+                <p style="color:var(--text-muted);font-size: 0.9 rem; margin-bottom: 1rem;">
+                    Matricula tus materias de manera rápida y sencilla
+                </p>
+                <button class="btn">Matricular Materias</button>
+                <button class="btn" style="background-color:transparent;color:var(--primary-light); border:1px solid var(--primary-light);">Ver Materias Matriculadas</button>
+
+             </section>
+         </div>
+     </div>
+</body>
+</html>
